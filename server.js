@@ -58,4 +58,4 @@ app.get("*", async (req, res) => {
     res.render("404", { layout: false });
   });
 
-app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`))
+app.listen(process.env.PORT||3000)
