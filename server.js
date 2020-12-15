@@ -47,7 +47,8 @@ app.use(cookieParser());
 app.set('layout', './layouts/layout')
 // app.set('views', './views')
 app.set('view engine', 'ejs')
-app.use(bodyParser.urlencoded())
+app.use(express.json());
+app.use(express.urlencoded({extended: true})); 
 app.use(bodyParser.json())
 app.use('/sign',insframeAuth)
 app.use('/profile',insframeProfile)
