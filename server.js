@@ -25,24 +25,24 @@ mongoose
 
 // Static Files
 
-app.use(express.static(__dirname + '/public'));
-app.use('/sign',express.static(__dirname + '/public'));
-app.use('/profile',express.static(__dirname + '/public'));
-app.use('/profile/collection',express.static(__dirname + '/public'));
-app.use('/profile/photos',express.static(__dirname + '/public'));
-app.use('/category',express.static(__dirname + '/public'));
-app.use('/search',express.static(__dirname + '/public'));
-app.use('/photo',express.static(__dirname + '/public'));
-app.use('/popular',express.static(__dirname + '/public'));
-app.use('/upload',express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
+// app.use('/sign',express.static(__dirname + '/public'));
+// app.use('/profile',express.static(__dirname + '/public'));
+// app.use('/profile/collection',express.static(__dirname + '/public'));
+// app.use('/profile/photos',express.static(__dirname + '/public'));
+// app.use('/category',express.static(__dirname + '/public'));
+// app.use('/search',express.static(__dirname + '/public'));
+// app.use('/photo',express.static(__dirname + '/public'));
+// app.use('/popular',express.static(__dirname + '/public'));
+// app.use('/upload',express.static(__dirname + '/public'));
 
 
 
 // Set Views
-app.use(session({secret: 'mySecret', resave: false, saveUninitialized: false}));
+app.get(session({secret: 'mySecret', resave: false, saveUninitialized: false}));
 //configure the options however you need them, obviously
-app.use(expressLayouts)
-app.use(cookieParser());
+app.get(expressLayouts)
+app.get(cookieParser());
 
 app.set('layout', './layouts/layout')
 // app.set('views', './views')
