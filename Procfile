@@ -1,3 +1,3 @@
 "scripts": {
-  "start": "node/backend/server.js"
+  "start": "node 'server.js'"
 }
