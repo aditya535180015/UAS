@@ -50,10 +50,10 @@ app.set('view engine', 'ejs')
 app.use(express.json());
 app.use(express.urlencoded({extended: true})); 
 app.use(bodyParser.json())
-app.use('/sign',insframeAuth)
-app.use('/profile',insframeProfile)
-app.use('/api/images',insframeRouterAPI)
-app.use(insframeContent)
+app.use('/sign',tokoasikAuth)
+app.use('/profile',tokoasikProfile)
+app.use('/api/images',tokoasikAPI)
+app.use(tokoasikContent)
 
 app.get("*", async (req, res) => {
     res.render("404", { layout: false });
