@@ -1,5 +1,5 @@
 module.exports = {
-    mongoUri:"mongodb+srv://insframe123:superadmin@insframe.ogloo.mongodb.net/Insframe?retryWrites=true&w=majority",
+    mongoUri:"mongodb+srv://tokoasikdb:tokoasikdb@tokoasikweb.ktepj.mongodb.net/test",
     PORT: process.env.PORT || 3000,
 };
 
