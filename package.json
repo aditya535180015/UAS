@@ -6,9 +6,10 @@
   "engines":{
     "node":"12.19.0"
   },
+
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node ./backend/server.js"
   },
   "keywords": [],
   "author": "",
