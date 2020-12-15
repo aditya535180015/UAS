@@ -48,7 +48,7 @@ app.set('layout', './layouts/layout')
 // app.set('views', './views')
 app.set('view engine', 'ejs')
 app.use(express.json());
-app.use(express.urlencoded({extended: true})); 
+app.use(express.urlencoded()); 
 app.use(bodyParser.json())
 app.use('/sign',tokoasikAuth)
 app.use('/profile',tokoasikProfile)
